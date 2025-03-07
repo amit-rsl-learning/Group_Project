@@ -1,1 +1,252 @@
 /* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
+
+/* General Styling */
+
+body {
+  font-family: poppins;
+}
+
+.homePageDiv {
+  max-width: 100vw;
+  height: 100vh;
+  padding-top: 2rem;
+}
+
+/* Navbar CSS */
+
+.navBrand {
+  font-size: 1.5rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  background-color: #444;
+  color: #fff;
+}
+
+.navItems {
+  display: flex;
+  gap: 2rem;
+}
+
+.navItem {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+/* Navbar CSS */
+
+/* Home Page CSS */
+.cardsDiv {
+  padding-top: 4rem;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4rem;
+}
+
+.searchBar {
+  padding-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchBar input {
+  width: 60%;
+  font-size: 1.2rem;
+  padding: 0.75rem 1rem;
+  border-radius: 2rem;
+  background-color: #aaa;
+  border: none;
+  outline: none;
+}
+
+.topUsersTitle {
+  text-align: center;
+  border-top: 1px solid #c8c8c8;
+  border-bottom: 1px solid #c8c8c8;
+  padding: 1rem 0;
+}
+
+.displayMessage {
+  text-align: center;
+}
+
+/* Home Page CSS */
+
+/* User List */
+.user-list {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 10px;
+}
+
+.user-card {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  width: 300px;
+}
+
+.user-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.user-name {
+  margin: 0;
+  font-size: 16px;
+}
+
+.visit-profile {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.visit-profile:hover {
+  background-color: #0056b3;
+}
+
+.allUsersList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 1rem;
+  padding: 0 3rem;
+}
+
+/* User List */
+
+/* User Card */
+
+/* Profile Card */
+.profile-card {
+  width: 350px;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
+  transition: transform 0.3s;
+  border: 1px solid #555;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.username {
+  font-size: 16px;
+  color: #777;
+}
+
+.bio {
+  font-size: 14px;
+  margin: 10px 0;
+  color: #555;
+}
+
+.location {
+  font-size: 14px;
+  color: #444;
+  font-style: italic;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.stats p {
+  font-size: 14px;
+  background: #f4f4f4;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.links {
+  margin-top: 15px;
+}
+
+.github-btn,
+.blog-btn {
+  display: inline-block;
+  margin: 5px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.github-btn {
+  background: #000;
+  color: white;
+}
+
+.blog-btn {
+  background: #007bff;
+  color: white;
+}
+
+.github-btn:hover {
+  background: #777;
+  transition: 0.5s all;
+}
+
+.blog-btn:hover {
+  background: #0056b3;
+}
+
+/* User Card */
+
+
+/* Footer */
+/* Footer */
+.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 20px;
+  font-size: 14px;
+  position: relative;
+  bottom: 0;
+  max-width: 100%;
+}
+
+/* Footer */
