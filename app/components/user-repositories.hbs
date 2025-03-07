@@ -1,0 +1,12 @@
+<div class="repos-container" data-test-repos-container>
+    <h2>Repositories</h2>
+    <input
+        class="repo-search"
+        type="search"
+        {{on "input" @handleInput}}
+        data-test-repos-search
+    />
+    {{#each @repos as |repo|}}
+        <RepoList @repo={{repo}} />
+    {{/each}}
+</div>
