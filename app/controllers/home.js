@@ -12,6 +12,7 @@ export default class HomeController extends Controller {
       `https://api.github.com/users/${e.target.value}`,
     );
     const data = await response.json();
+    console.log(data)
     if (response.status == 200) {
       this.userProfile = data;
       this.userFound = true;

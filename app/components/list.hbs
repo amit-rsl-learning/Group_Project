@@ -1,10 +1,12 @@
 <div class="user-card">
-    <img src={{@user.avatar_url}} alt={{@user.login}} class="user-image">
+    <img data-test-list="avatar" src={{@user.avatar_url}} alt={{@user.login}} class="user-image">
     <div class="user-info">
-      <h3 class="user-name">{{@user.login}}</h3>
-      <button class="visit-profile" type="button">
-        Visit Profile
-      </button>
+      <h3 data-test-list="username" class="user-name">{{@user.login}}</h3>
+        <a data-test-list="profileLink" href={{@user.html_url}} target="_blank">
+          <button class="visit-profile" type="button">
+              Visit Profile
+          </button>
+        </a>
     </div>
 </div>
 

@@ -1,0 +1,91 @@
+.profile-card {
+    width: 350px;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
+    transition: transform 0.3s;
+    border: 1px solid #555;
+  }
+  
+  .profile-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .username {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  .bio {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  .location {
+    font-size: 14px;
+    color: #444;
+    font-style: italic;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  .stats p {
+    font-size: 14px;
+    background: #f4f4f4;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .links {
+    margin-top: 15px;
+  }
+  
+  .github-btn,
+  .blog-btn {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .github-btn {
+    background: #000;
+    color: white;
+  }
+  
+  .blog-btn {
+    background: #007bff;
+    color: white;
+  }
+  
+  .github-btn:hover {
+    background: #777;
+    transition: 0.5s all;
+  }
+  
+  .blog-btn:hover {
+    background: #0056b3;
+  }
+  
