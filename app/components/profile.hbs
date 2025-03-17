@@ -1,0 +1,27 @@
+{{! @attribute profile - contains profile related data }}
+<div class="profile" data-test-profile>
+    <header class="profile-header">
+        <img src={{@profile.avatar_url}} />
+        <h2 data-test-profile-name>{{@profile.name}}</h2>
+        <p data-test-location>{{if
+                @profile.location
+                @profile.location
+                "Location:Unknown"
+            }}</p>
+    </header>
+    <div class="user-details">
+        <div class="user-stats"><b
+                data-test-followers
+            >{{@profile.followers}}</b>
+            Followers</div>
+        <div class="user-stats"><b
+                data-test-following
+            >{{@profile.following}}</b>
+            Following</div>
+        <div class="user-stats"><b data-test-repos>{{@profile.public_repos}}</b>
+            Repositories</div>
+    </div>
+    <button>
+        <a href={{@profile.html_url}}> View Profile </a>
+    </button>
+</div>

@@ -1,0 +1,19 @@
+<div class="repo-list" data-test-repo-list>
+    <img src="/repo.svg" alt="RepoImage" class="repo-img" />
+    <div class="repo-info">
+        <p class="repo-name">{{@repo.name}}</p>
+        <div class="repo-badges">
+            {{#if @repo.license}}
+                <Badge data-test-license @text={{@repo.license.name}} />
+            {{/if}}
+            <Badge
+                data-test-updated-date
+                @text="Updated:{{@repo.updated_at}}"
+            />
+            {{#if @repo.language}}
+                <Badge data-test-language @text="{{@repo.language}}" />
+            {{/if}}
+        </div>
+    </div>
+    <a href={{@repo.html_url}}>Visit Github Repository</a>
+</div>

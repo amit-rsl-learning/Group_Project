@@ -1,0 +1,7 @@
+<div class="user-profile">
+    <Profile @profile={{@profile}} />
+    <UserRepositories
+        @repos={{if this.repositories this.repositories @repos}}
+        @handleInput={{(fn this.handleInput @repos)}}
+    />
+</div>
