@@ -1,0 +1,23 @@
+{{page-title "Home"}}
+<div class="homePageDiv">
+    <div class="searchBar">
+        <input type="text" placeholder="Search for users" {{on 'input' this.searchUser}}>
+    </div>
+    {{#if this.userFound}}
+    <div class="cardsDiv">
+        <Card @profile={{this.userProfile}}/>
+    </div>
+    {{/if}}
+    {{#unless this.userFound}}
+        <p class="displayMessage">{{this.displayMessage}}</p>
+    {{/unless}}
+    <div>
+        <h1 class="topUsersTitle">Top contributors of the week</h1>
+        <div class="allUsersList">
+        {{#each @model as |user|}}
+        <List @user={{user}}/>
+        {{/each}}
+        </div>
+    </div>
+</div>
+{{outlet}}

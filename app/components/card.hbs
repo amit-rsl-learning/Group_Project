@@ -1,0 +1,20 @@
+<div class="profile-card">
+  <img src={{@profile.avatar_url}} alt="Profile Avatar" class="avatar">
+  <h2 data-test-h2="name">{{@profile.name}}</h2>
+  <p data-test-p="username" class="username">@{{@profile.login}}</p>
+  <p class="bio">{{@profile.bio}}</p>
+
+  {{#if @profile.location}}
+    <p class="location">📍 {{@profile.location}}</p>
+  {{/if}}
+
+  <div class="stats">
+    <p data-test-p="repo">Repos: <strong>{{@profile.public_repos}}</strong></p>
+    <p data-test-p="followers">Followers: <strong>{{@profile.followers}}</strong></p>
+    <p data-test-p="following">Following: <strong>{{@profile.following}}</strong></p>
+  </div>
+
+  <div class="links">
+    <a data-test-link="profile" href={{@profile.html_url}} target="_blank" class="github-btn">GitHub Profile</a>
+  </div>
+</div>
